@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pan Con Jamon CN</title>
+    <link rel="shorcut icon" type="image/png" href="./Imgs/Logo.png" />
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <!-- //////////Header////////// -->
+    <header><img src="./Imgs/Logo.png" alt="" /></header>
+
+    <!-- //////////Contenedor////////// -->
+    <!-- ////////Imagen del hero//////// -->
+    <section id="hero">
+      <div class="bienvenido-text"><h2>Bienvenido</h2></div>
+      <div class="hero-text">
+        <h1>Nombre aquí</h1>
+      </div>
+    </section>
+
+    <!-- //////////Botón del menu emergente////////// -->
+    <div class="nav-but">
+      <button id="menuButton" onclick="toggleMenu()">
+        <img id="btnMenu" src="./Imgs/Hamburger_icon.svg.png" />
+      </button>
+    </div>
+
+    <div id="menu">
+      <ul>
+        <li class="active" onclick="toggleMenu()">
+          <a href="#container">Inicio</a>
+        </li>
+        <li><a href="./calendario/index..html">Calendario</a></li>
+        <li><a href="../contacto/index.html">Contacto</a></li>
+        <li><a href="./tzp/tzp.html">Locación</a></li>
+        <li><a href="./acerca de nosotros/">Acerca de Nosotros</a></li>
+      </ul>
+    </div>
+    <div id="container">
+      <!--/////////// Novedades ///////////-->
+      <div class="nov-sep-top"></div>
+      <div class="novedades">
+        <h2>Novedades</h2>
+      </div>
+      <div class="nov-sep-bottom"></div>
+
+      <section id="novedades">
+        <div
+          class="contenido"
+          id="header-nov1-text"
+          onclick="expandNov('nov1-text', 'nov1Textcollapse')"
+        >
+          <h4>Matriculación abierta</h4>
+          <div id="nov1-text" class="nov-text">
+            <p id="nov1Textcollapse">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem
+              voluptates ratione quas earum architecto dignissimos fugiat
+              repellat numquam, exercitationem quis reprehenderit eum hic
+              nostrum sapiente totam voluptatem possimus nihil expedita!
+              Voluptatem odit doloremque vel! Architecto, eos? Numquam
+              repudiandae animi praesentium porro cum iure corporis harum
+              excepturi temporibus, explicabo, voluptatem quos?
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="contenido"
+          id="header-nov2-text"
+          onclick="expandNov('nov2-text', 'nov2Textcollapse')"
+        >
+          <h4>Día de la bandera</h4>
+          <div id="nov2-text" class="nov-text">
+            <p id="nov2Textcollapse">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem
+              voluptates ratione quas earum architecto dignissimos fugiat
+              repellat numquam, exercitationem quis reprehenderit eum hic
+              nostrum sapiente totam voluptatem possimus nihil expedita!
+              Voluptatem odit doloremque vel! Architecto, eos? Numquam
+              repudiandae animi praesentium porro cum iure corporis harum
+              excepturi temporibus, explicabo, voluptatem quos?
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="contenido"
+          id="header-nov3-text"
+          onclick="expandNov('nov3-text', 'nov3Textcollapse')"
+        >
+          <h4>Día del niño</h4>
+          <div id="nov3-text" class="nov-text">
+            <p id="nov3Textcollapse">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem
+              voluptates ratione quas earum architecto dignissimos fugiat
+              repellat numquam, exercitationem quis reprehenderit eum hic
+              nostrum sapiente totam voluptatem possimus nihil expedita!
+              Voluptatem odit doloremque vel! Architecto, eos? Numquam
+              repudiandae animi praesentium porro cum iure corporis harum
+              excepturi temporibus, explicabo, voluptatem quos?
+            </p>
+          </div>
+        </div>
+        <div
+          class="contenido"
+          id="header-nov4-text"
+          onclick="expandNov('nov4-text', 'nov4Textcollapse')"
+        >
+          <h4>Fin de año</h4>
+          <div id="nov4-text" class="nov-text">
+            <p id="nov4Textcollapse">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem
+              voluptates ratione quas earum architecto dignissimos fugiat
+              repellat numquam, exercitationem quis reprehenderit eum hic
+              nostrum sapiente totam voluptatem possimus nihil expedita!
+              Voluptatem odit doloremque vel! Architecto, eos? Numquam
+              repudiandae animi praesentium porro cum iure corporis harum
+              excepturi temporibus, explicabo, voluptatem quos?
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div id="big-novedades">
+        <div class="row">
+          <div class="column" onclick="openTab('b1', 'containerTab');">
+            Día del niño
+          </div>
+          <div class="column" onclick="openTab('b2', 'containerTab');">
+            Día de la bandera
+          </div>
+          <div class="column" onclick="openTab('b3', 'containerTab');">
+            Examen
+          </div>
+          <div class="column" onclick="openTab('b4', 'containerTab');">
+            Fin del año
+          </div>
+        </div>
+
+        <!-- The expanding grid (hidden by default) -->
+        <div id="b1" class="containerTab">
+          <!-- If you want the ability to close the container, add a close button -->
+          <span
+            onclick="this.parentElement.style.display='none'"
+            class="closebtn"
+            >x</span
+          >
+          <h2>Día del niño</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem
+            voluptates ratione quas earum architecto dignissimos fugiat repellat
+            numquam, exercitationem quis reprehenderit eum hic nostrum sapiente
+            totam voluptatem possimus nihil expedita! Voluptatem odit doloremque
+            vel! Architecto, eos? Numquam repudiandae animi praesentium porro
+            cum iure corporis harum excepturi temporibus, explicabo, voluptatem
+            quos?
+          </p>
+        </div>
+
+        <div id="b2" class="containerTab">
+          <span
+            onclick="this.parentElement.style.display='none'"
+            class="closebtn"
+            >x</span
+          >
+          <h2>Día de la bandera</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem
+            voluptates ratione quas earum architecto dignissimos fugiat repellat
+            numquam, exercitationem quis reprehenderit eum hic nostrum sapiente
+            totam voluptatem possimus nihil expedita! Voluptatem odit doloremque
+            vel! Architecto, eos? Numquam repudiandae animi praesentium porro
+            cum iure corporis harum excepturi temporibus, explicabo, voluptatem
+            quos?
+          </p>
+        </div>
+
+        <div id="b3" class="containerTab">
+          <span
+            onclick="this.parentElement.style.display='none'"
+            class="closebtn"
+            >x</span
+          >
+          <h2>Examen</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem
+            voluptates ratione quas earum architecto dignissimos fugiat repellat
+            numquam, exercitationem quis reprehenderit eum hic nostrum sapiente
+            totam voluptatem possimus nihil expedita! Voluptatem odit doloremque
+            vel! Architecto, eos? Numquam repudiandae animi praesentium porro
+            cum iure corporis harum excepturi temporibus, explicabo, voluptatem
+            quos?
+          </p>
+        </div>
+        <div id="b4" class="containerTab">
+          <span
+            onclick="this.parentElement.style.display='none'"
+            class="closebtn"
+            >x</span
+          >
+          <h2>Fin de año</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem
+            voluptates ratione quas earum architecto dignissimos fugiat repellat
+            numquam, exercitationem quis reprehenderit eum hic nostrum sapiente
+            totam voluptatem possimus nihil expedita! Voluptatem odit doloremque
+            vel! Architecto, eos? Numquam repudiandae animi praesentium porro
+            cum iure corporis harum excepturi temporibus, explicabo, voluptatem
+            quos?
+          </p>
+        </div>
+      </div>
+
+      <!-- /////////// Calendario //////////// -->
+      <div id="calendario">
+        <div class="nov-sep-top"></div>
+        <div class="novedades">
+          <h2>Calendario</h2>
+        </div>
+        <div class="nov-sep-bottom"></div>
+
+        <!-- Esta semana -->
+        <div class="calendar-box">
+          <h2>Está semana:</h2>
+
+          <!-- Dias -->
+          <div class="general-box-days">
+            <div class="calendar-days-box">
+              <!--/////////// Lunes ///////////-->
+              <div class="calendar-day" class="calendar-day1">
+                <div class="day">
+                  <h3>Lunes</h3>
+                </div>
+
+                <div class="to-do-day">
+                  <p>Día del niño</p>
+                </div>
+              </div>
+
+              <!--/////////// Martes ///////////-->
+              <div class="calendar-day" class="calendar-day2">
+                <div class="day">
+                  <h3>Martes</h3>
+                </div>
+
+                <div class="to-do-day">
+                  <p>Examen de 4to grado</p>
+                </div>
+              </div>
+
+              <!--/////////// Miercoles ///////////-->
+              <div class="calendar-day" class="calendar-day3">
+                <div class="day">
+                  <h3>Miércoles</h3>
+                </div>
+
+                <div class="to-do-day">
+                  <p>Día de la bandera</p>
+                </div>
+              </div>
+
+              <!--/////////// Jueves ///////////-->
+              <div class="calendar-day" class="calendar-day4">
+                <div class="day">
+                  <h3>Jueves</h3>
+                </div>
+
+                <div class="to-do-day">
+                  <p>Examen de Español</p>
+                </div>
+              </div>
+
+              <!--/////////// Viernes ///////////-->
+              <div class="calendar-day" class="calendar-day5">
+                <div class="day">
+                  <h3>Viernes</h3>
+                </div>
+
+                <div class="to-do-day">
+                  <p>Fin del año escolar</p>
+                </div>
+              </div>
+
+              <!--/////////// Sabado ///////////-->
+              <div class="calendar-day" class="calendar-day6">
+                <div class="day">
+                  <h3>Sábado</h3>
+                </div>
+
+                <div class="to-do-day">
+                  <p>Fin de semana</p>
+                </div>
+              </div>
+
+              <!--/////////// Domingo ///////////-->
+              <div class="calendar-day" class="calendar-day7">
+                <div class="day">
+                  <h3>Domingo</h3>
+                </div>
+
+                <div class="to-do-day">
+                  <p>Fin de semana</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--///// Footer ////-->
+    <section id="footer">
+      <footer>
+        <div class="footer-title">
+          <h1>Name here</h1>
+        </div>
+        <div class="first-colum">
+          <ul>
+            <li>
+              <a href="./acerca de nosotros/index.html">Acerca de nosotros</a>
+            </li>
+            <li><a href="./tzp/tzp.html">Facebook</a></li>
+            <li><a href="./tzp/tzp.html">Instagram</a></li>
+          </ul>
+        </div>
+        <div class="second-colum">
+          <ul>
+            <li><a href="./calendario/index..html">Calendario</a></li>
+            <li><a href="./tzp/tzp.html">ejemplo@gmail.com</a></li>
+            <li><a href="./tzp/tzp.html">Twitter</a></li>
+          </ul>
+        </div>
+
+        <div class="end">
+          <p>0001 Main Street, New York, 25954, US</p>
+          <p><i>Estudio, Superación, Trabajo</i></p>
+        </div>
+      </footer>
+    </section>
+    <script src="./main.js"></script>
+  </body>
+</html>
